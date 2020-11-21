@@ -1,11 +1,9 @@
 (ns exercise3)
 
-(defn fibonacci
-  "Calculates the fibonacci result fo the given input value."
-  [x]
-  (throw (Exception. "Not implemented."))
-)
-
-
+(defn fibonacci [n]
+  (loop [ x [0 1]] 
+    (if (< (count x) n) 
+      (recur (conj x (+ (last x) (nth x (- (count x) 2)))))
+      x)))
 
 

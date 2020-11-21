@@ -1,9 +1,7 @@
 (ns exercise7)
+;"Increments a given input by 1."
+(defn increment [x] (inc x)
 
-(defn increment
-  "Increments a given input by 1."
-  [x]
-  (throw (Exception. "Not implemented."))
 )
 
 
